@@ -1,0 +1,30 @@
+{
+  "name": "@tgedr/graphql-api",
+  "version": "1.0.0",
+  "description": "a graphql api",
+  "main": "graphql.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tgedr/graphql-api.git"
+  },
+  "keywords": [
+    "graphql",
+    "api",
+    "javascript"
+  ],
+  "author": "Joao Tiago Viegas <jtviegas.js@gmail.com>",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/tgedr/graphql-api/issues"
+  },
+  "homepage": "https://github.com/tgedr/graphql-api#readme",
+  "dependencies": {
+    "apollo-server-lambda": "^2.16.1",
+    "graphql": "^15.3.0",
+    "@tgedr/graphql-store-schema": "^1.0.1"
+  },
+  "devDependencies": {}
+}
