@@ -108,8 +108,9 @@ dist
 coverage
 .DS_Store
 secrets.inc
-
-
+bashutils.inc
+terraform/modules/
+helloworld.zip
 *.tfstate
 *.tfstate.backup
 .terraform

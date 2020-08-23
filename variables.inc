@@ -1,10 +1,13 @@
-MODULES_DIR=modules
-MODULES_URL=https://github.com/jtviegas/terraform-modules/trunk/modules
-export DB_CONTAINER=dynamodb4test
-export DYNDBSTORE_TEST_ENDPOINT="http://localhost:8000"
-export DB_IMAGE="amazon/dynamodb-local"
-export TERRAFORM_STATE_DIR=terraform/state
+export MODULES_URL=https://github.com/jtviegas/terraform-modules/trunk/modules
 export TERRAFORM_DIR=terraform
-export APPLICATION=tgedr-generic-app
+export TERRAFORM_STATE_DIR="${TERRAFORM_DIR}/tf-remote-state"
+export TERRAFORM_RESOURCES_DIR="${TERRAFORM_DIR}/resources"
+export TERRAFORM_RESOURCES_CONFIG_TEMPLATE="$TERRAFORM_DIR/config_tf.template"
+export TERRAFORM_RESOURCES_CONFIG="$TERRAFORM_RESOURCES_DIR/config.tf"
+export APPLICATION=tgedr-graphql
+export AWS_REGION=eu-west-1
 export ENVIRONMENT=dev
-AWS_REGION=eu-west-1
+export FUNCTION_NAME=helloworld
+export FUNCTION_FILE=helloworld.zip
+export FUNCTION_REPO="tgedr/function-helloworld"
+

@@ -1,0 +1,14 @@
+provider "aws" {
+  version = "~> 2.33"
+  region = "AWS_REGION"
+}
+
+terraform {
+  backend "s3" {
+    bucket         = "APPLICATION-ENVIRONMENT-terraform-state"
+    key            = "graphql-api"
+    region         = "AWS_REGION"
+    dynamodb_table = "APPLICATION-ENVIRONMENT-terraform-state-lock"
+    encrypt        = true
+  }
+}
