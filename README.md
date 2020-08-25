@@ -8,7 +8,7 @@ automation to create a graphql api on `aws`
   - svn
 
 ## how to
-  - fork this repository;
+  - fork/clone this repository;
   - edit variables in `CUSTOMISABLE SECTION` in `variables.inc`:
     - APPLICATION: choose a name for the application;
     - AWS_REGION: the aws region you want to use along with your account;
