@@ -37,7 +37,3 @@ variable "function_timeout" {
   default     = 30
 }
 
-variable "aws_account_id" {
-  type        = string
-  # default     = "..."
-}

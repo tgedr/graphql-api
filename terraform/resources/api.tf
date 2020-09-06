@@ -1,5 +1,5 @@
 module "graphql-api" {
-  source = "../modules/graphql-api"
+  source = "../modules/aws/graphql-api"
   api = "${var.application}"
   environment = "${var.environment}"
   function = "${var.function}"
@@ -8,7 +8,6 @@ module "graphql-api" {
   function-runtime = "${var.function_runtime}"
   function-memory = "${var.function_memory}"
   function-timeout = "${var.function_timeout}"
-  account-id = "${var.aws_account_id}"
 }
 
 

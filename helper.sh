@@ -55,11 +55,11 @@ case "$1" in
     ;;
   deploy)
     # shellcheck disable=SC2119
-    tf_resources_on
+    tf_resources_for_graphql_api_on
     ;;
   undeploy)
     # shellcheck disable=SC2119
-    tf_resources_off
+    tf_resources_for_graphql_api_off
     ;;
   tf-state)
     case "$2" in
