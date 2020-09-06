@@ -19,16 +19,21 @@ automation to create a graphql api on `aws`
     and FUNCTION_MEMORY, as defaults are defined in `vars.tf`
   - create a `secrets.inc` in the base folder and from there export your `AWS` account credentials, 
   you must have a sort-of admin account:
+  
   ![secrets01][secrets01]
   - download the latest `bashutils` include file:
+  
   ![bashutils01][bashutils01]
   - create remote `terraform` state: 
+  
   ![stateon01][stateon01]
   ![stateon02][stateon02]
   - deploy api:
+  
   ![deploy01][deploy01]
   ![deploy02][deploy02]
   - test the api, use context path `graphql` :
+  
   ![post01][post01]
   
 [stateon01]: assets/stateon01.png "stateon01"
