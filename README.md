@@ -17,7 +17,8 @@ automation to create a graphql api on `aws`
     that is going to be responsible for handling the related lambda calls;
     - Note: you can still customise variables FUNCTION_RUNTIME, FUNCTION_TIMEOUT
     and FUNCTION_MEMORY, as defaults are defined in `vars.tf`
-  - create a `secrets.inc` in the base folder and from there export your `AWS` account credentials, you must have a sort-of admin account:
+  - create a `secrets.inc` in the base folder and from there export your `AWS` account credentials, 
+  you must have a sort-of admin account:
   ![secrets01][secrets01]
   - download the latest `bashutils` include file:
   ![bashutils01][bashutils01]
